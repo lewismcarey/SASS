@@ -1,14 +1,14 @@
 // !MAIN SASS COMPILER
 
 // !TOC
-// 1. Defaults
-// 2. Config
-// 3. Library
-// 4. Objects
-// 5. Styles
-// 6. Extensions
-// 7. Themes
-// 8. Overrides
+// 1.  Defaults
+// 2.  Config
+// 3.  Library
+// 4.  Objects
+// 5.  Styles
+// 6.  Extensions
+// 7.  Themes
+// 8.  Overrides
 
 // !Defaults
 
@@ -25,9 +25,7 @@
 // !--Dependencies
 @import "Library/Dependencies/normalize";     // normalize
 @import "Library/Dependencies/mixin_library"; // mixin library
-@import "Library/Dependencies/grid";          // grid options
 @import "Library/Dependencies/mqs";           // MQ mixins
-@import "Library/Dependencies/flexslider";    // flexslider default
 
 // !--Base Styles
 @import "Library/Base/global";      // *, HTML, BODY (inc. fonts)
@@ -46,7 +44,7 @@
 // !Objects
 
 @import "Objects/box";        // box model (title, text, link, media)
-@import "Objects/button";     // buttons (link, buttun, input[type="submit"])
+@import "Objects/button";     // buttons (link, button, input[type="submit"])
 @import "Objects/font_icons"; // default font icon references (social, navigation UI)
 @import "Objects/logo";       // logo wrapper
 @import "Objects/media";      // media object (video)
@@ -60,11 +58,16 @@
 @import "Styles/main";   // main
 @import "Styles/aside";  // aside
 @import "Styles/footer"; // footer
-@import "Styles/pages";  // pages
+
+// !--Pages
+//@import "Styles/page-type-xxxxxx";  // pages
 
 // !--Modules
-//@import "Styles/breadcrumb"; // breadcrumb [SAMPLE]
-//@import "Styles/gallery";    // gallery    [SAMPLE]
+//@import "Styles/slider"; // breadcrumb [SAMPLE]
+
+// !--Blocks
+//@import "Styles/block-xxxxxx"; // block
+
 
 // !Extensions
 
@@ -73,11 +76,14 @@
 
 // !Themes
 
-@import "Themes/site";   // root themes
-@import "Themes/page";   // page themes
-@import "Themes/modules"; // module themes
+//@import "Themes/site";    // root themes
+//@import "Themes/page";    // page themes
+//@import "Themes/modules"; // module themes
 
 // !Overrides (make use of cascade)
+
+//@import "Overrides/ie-8";  // .ie-8 styles
+
 
 // !--Print
 @import "Library/print"; // print styles

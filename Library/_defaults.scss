@@ -8,9 +8,7 @@
 // Used to control the overall output of the build based on scale of the requirements
 
 // !--Dependencies
-$use-normalise:     true!default;
-$use-grids:         true!default;
-$use-flexslider:    true!default;
+$use-normalise:  true!default;
 
 // !--Base
 $use-global:      true!default;
@@ -40,12 +38,11 @@ $use-module-themes: true!default;
 // Simple Global Settings that are used within the library - may be overridden
 
 // !--Border Box
-$use-border-box: true!default;
+$use-box-sizing: true!default;
 
 // !--Base Font
 $base-font-size:   16px!default;
 $base-line-height: 24px!default;
-$base-font-family: sans-serif!default;
 
 // !--Font Sizes
 $h1-size: 36px!default;
