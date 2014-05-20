@@ -2,71 +2,35 @@
 
 // !BUTTON
 
-.btn {
+  .btn {
+      display: inline-block;
+      vertical-align: middle;
+      white-space: nowrap;
+      font-family: inherit;        
+      font-size: 100%;
+      cursor: pointer;
+      border: none;
+      margin: 0;
+      padding-top:   0;
+      padding-bottom:0;
+      line-height: 3;
+      padding-right: 1em;
+      padding-left:  1em;
 
-    // reset
-    // reusable e.g. variations
+  }
 
-    display: block;
-    padding: 5px 20px;
-    border: 1px solid white;
+  .btn {
 
-    span{
+      &,
+      &:hover {
+          text-decoration: none;
+      }
 
-        float: right;
-        display: block;
-        width: 20px;
-        color: white;
+      &:active,
+      &:focus {
+          outline: none;
+      }
 
-    }
-
-    .is-active {
-
-
-
-    }
-
-}
-
-// this is a modification of the btn object
-
-.site-header {
-
-    .btn {
-
-        background: red;
-
-    }
-
-}
-
-// what if all of btn needed overidding site wide?
-
-// e.g
-
-.btn {
-
-    padding: 20px;
-    border: none;
-    background: red;
-
-    span {
-
-        float: left;
-        width: 10px;
-
-    }
-
-}
-
-.site-header {
-
-    .btn {
-
-        background: green;
-
-    }
-
-}
+  }
 
 }

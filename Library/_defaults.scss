@@ -21,12 +21,11 @@ $use-lists:       true!default;
 $use-tables:      true!default;
 
 // !--Objects
-$use-box:        true!default;
+$use-media:      true!default;
 $use-button:     true!default;
 $use-font-icons: true!default;
 $use-icons:      true!default;
 $use-logo:       true!default;
-$use-media:      true!default;
 $use-nav:        true!default;
 
 // !--Themes
@@ -43,6 +42,7 @@ $use-box-sizing: true!default;
 // !--Base Font
 $base-font-size:   16px!default;
 $base-line-height: 24px!default;
+$base-spacing-unit: $base-line-height;
 
 // !--Font Sizes
 $h1-size: 36px!default;

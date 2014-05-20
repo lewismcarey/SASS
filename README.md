@@ -1,6 +1,14 @@
 # SASS
 
-A Sass framework influenced byd inuit css and followed smacss. We found those great. This models our own workflow.
+A v.lightweight SASS Framework to leverage SASS features whilst handling the cascade, working in partial files (and a style directory) as well as build a resource of objects.
+
+Assumptions:
+
+* main.scss compiles to main.css in the parent directory
+* old-ie.scss imports main.scss up to a chosen breakpoint
+* Library and Objects should only constitute framework-wide changes
+* A developer updates the config partials then builds the site in styles partials
+* font-icons.scss references a fonts folder in assets
 
 
 ## SCSS Directory Structure and Files
@@ -21,10 +29,8 @@ A Sass framework influenced byd inuit css and followed smacss. We found those gr
     * Mixins
     * **Dependencies**
         * Normalise
-        * Grid-System
         * MQ
         * Mixin-library
-        * Flex-slider
 * **Objects**
      * nav
      * media
@@ -38,26 +44,25 @@ A Sass framework influenced byd inuit css and followed smacss. We found those gr
      * mq
      * variables (colours, fonts/font-icon-set)
 * **Styles**
-     * global (body, links, wrapper)?
+     * global (html, body, site objects)
      * header
      * navs
      * main
      * aside
      * footer
-     * page-gallery (match template hierarchy?)
-     * page-contact-us (match template hierarchy?)
+     * page-gallery (example)
+     * block-accordian (example)
      * **Modules**
-          * slider
-          * gallery
+          * slider (example)
+          * gallery (example)
 * **Extensions** (extensions to library or objects that aren't content related)
      * ext-forms (example)
      * ext-button (example)
-     * ext-font-icon
 * **Themes** (colour themes)
      * site-themes
      * page-themes
      * module-themes
-* **Overrides**
+* **Overrides** (ie styles or similar)
      * make use of the cascade
 
 
