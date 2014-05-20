@@ -35,9 +35,6 @@ Assumptions:
      * nav
      * media
      * button
-     * icons
-     * box
-     * fonts
      * font-icons
 * **Config** (project specific)
      * setup true:false
